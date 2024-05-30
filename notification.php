@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $doctorName = $data['doctorName'];
 
     // Replace with your FCM token (usually stored in your database)
-    $fcmToken = "eQFZ8xPTSjWw9SLbg6ja7v:APA91bEgIXUVDslZaRLjtrxOPrRiwqN9U6iLHJInp75IOhjP_Ev6l_cFHezR5_p_OPSeOIKbjHkH_tlF6vRODYRAF3KapL26BOOlba-J7VFkgIDfkzwwVgh3CTykxdy9HPhgBEEqsT4A";
+    $fcmToken = "";
 
     $notification = [
         'title' => 'Emergency Notification',
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ];
 
     $headers = [
-        'Authorization: key=AAAAEgMCLY0:APA91bHnKLz-NRg7uvOW7NC4gR68XV-qh4guhSIX8yti5HQWnLOWUWfdWT5PHHHSe7ccVobmivHWY_QIDm_TJjLys0C1qT0uu-M1WZlLNcqSblPPQquYV-r9RmPAOEIT4dOAI63Xh9_U',
+        'Authorization: key=', //your key server in FCM
         'Content-Type: application/json'
     ];
 
